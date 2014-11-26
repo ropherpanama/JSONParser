@@ -6,6 +6,7 @@ import com.cursoup.parser.beans.Usuario;
 public class Main {
 	public static void main(String[] args) {
 		
+//		Persistencia de Objeto Java en fichero JSON
 //		Usuario u = new Usuario();
 //		u.setNombre("Fulano");
 //		u.setNickname("mengano");
@@ -19,6 +20,7 @@ public class Main {
 //		Parser.escribirJsonEnDisco(json); 
 //		System.out.println("Listo!");
 		
+//		Lectura de un fichero JSON para ser transformado a un Objeto Java
 		Usuario u = (Usuario) Parser.leerJsonDeDisco("file.json", new Usuario());
 		System.out.println(u.toString());
 	}
